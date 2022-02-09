@@ -1,0 +1,300 @@
+.nav-card{
+    padding-top:    12% !important;
+    padding-bottom: 10% !important;
+}
+
+.nav-button{
+    color: grey;
+    background: #ffc4e1;
+    border-radius: 99px;
+
+    font-family: 'Londrina Solid', cursive;
+    transition: all 0.6s;
+
+}
+
+.uk-hidden, [hidden] {
+    display: none!important;
+}
+
+.brand-title{
+    margin-bottom: 0px !important;
+}
+
+.nav-button:hover{
+    box-shadow: 2px 3px 5px #5e5d5d;
+}
+
+#uk-top{
+    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image.jpg') !important;
+
+    background-size: 100% 120% !important;
+    background-repeat: no-repeat;
+    background-position: 0 -70px !important;
+
+    /* border-right: 5px solid #f1d6d9; */
+    border-bottom: 5px solid #f1d6d9;
+    position:relative;
+
+}
+
+#nav-section .uk-card-body:not(.vr-card){
+    padding: 15% 0px !important;
+}
+
+.nav-link-section{
+    margin: auto 5% !important;
+    width: 100%;
+}
+
+.button-div{
+    padding-left: 2%;
+}
+
+
+ul:not(.uk-slideshow-items) {
+    list-style-type: none;
+    padding: 0;
+    margin: 1% 10% !important;
+    transition: all 1s !important;
+}
+
+@media (max-width: 1200px) {
+    ul {
+        margin-left: 5% !important;
+    }    
+
+
+    .nav-ul li {
+        margin: 1px 10px !important;
+    }
+}
+
+.nav-ul{
+    padding-left: 0px;
+    transition: all 0.5s;
+}
+
+.nav-ul li {
+    border-radius: 99px;
+    margin: 1px 15px;
+    float: left;
+    background: #ffc4e1;
+    transition: all 1s;
+}
+
+.nav-ul li:hover{
+    box-shadow: 2px 3px 5px #5e5d5d;
+}
+
+li a {
+    display: block;
+    color:#fff;
+    text-align: center;
+    padding: 4% 20px;
+    text-decoration: none !important;
+    transition: all 1s !important;
+    font-family: 'Righteous', cursive;
+
+    font-size: 1.1vw;
+}
+
+li a:hover {
+    color: #fff;
+}
+
+.uk-navbar-container{
+    padding: 5% 7% 20%;
+    background-color: rgba(252, 252, 252, -1) !important;
+}
+
+a#brand{
+    color: #ED65A9 !important;
+    /* font-family: 'Fugaz One', cursive; */
+    font-family: 'Righteous', cursive;
+    font-size: 3.5vw;
+    text-decoration: none;
+
+    transition: all 0.6s;
+}
+
+#brand img{
+    width: 15%;
+}
+
+
+@media (min-width:769px) {
+    #nav-ul{
+        margin-left: 20px;
+    }
+}
+
+
+#nav-ul li a{
+    font-family: 'Concert One', cursive;
+    color: #ED65A9;
+    transition: all 1s;
+}
+
+#nav-ul-2 li a{
+    font-family: 'Concert One', cursive;
+    color: #ED65A9;
+    transition: all 1s;
+}
+
+#nav-ul li a:hover{
+    opacity: 0.7;
+}
+
+
+#nav-ul-2 li a{
+    font-family: 'Concert One', cursive;
+    transition: all 1s;
+}
+
+#nav-ul-2 li a:hover{
+    opacity: 0.7;
+}
+
+#nav-ul-2{
+    display: none;
+}
+
+.uk-navbar-container{
+    transition: all 1s;
+}
+
+@media (min-width: 768px) {
+    #uk-top{
+        background-position: 0 -10px;
+    }
+}
+
+@media (max-width: 747px) {
+    
+    #nav-ul{
+        display: none;
+    }
+
+    #nav-ul-2{
+        display: block;
+    }
+
+
+    a#brand{
+        padding-right: 0%;
+    }
+
+    #uk-top{
+        background-position: 0 -10px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .uk-navbar-container{
+        padding-left: 10%;
+    }
+
+    a#brand{
+        font-size:medium;
+    }
+}
+
+@media (max-width: 342px) {
+    #uk-top{
+        padding-left: 10% !important;
+        width: 100%;
+        background-position: -15px -10px !important;
+    }
+
+    a#brand{
+        font-size:small;
+    }
+
+    #nav-ul-2 li a{
+        font-size: small;
+    }
+}
+
+@media (max-width: 375px) {
+    .uk-navbar-container{
+        padding-left: 7% !important;
+    }
+}
+
+
+.nav-intro{
+    padding: 2% 10% 5%;
+    margin-top: 40px !important;
+}
+
+.padding-inside{
+    /* background: rgba(255, 186, 234, 0.1) !important; */
+    border-radius: 9px;
+    padding: 5% 0%;
+}
+
+
+.vr-button{
+    border-radius: 999px;
+    background: #F28C3C;
+    color: aliceblue;
+    font-family: 'Dongle', sans-serif;
+    font-size: larger;
+}
+
+.nav-info-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-intro h3{
+    font-family: 'Fugaz One', cursive;
+    color: #a15a23;
+}
+
+.nav-intro p{
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+    font-size: larger;
+    color: #F28C3C;
+} 
+
+.uk-card-body{
+    padding-top: 0px;
+}
+
+@media (max-width: 959px) {
+    div.info-section {
+        display: none;
+    }
+}
+
+
+.vr-card{
+    position: absolute;
+    bottom: -90px;
+    padding: 2%;
+    background: #F1D6D9;
+    width: 80%;
+    margin: auto 10%;
+    border-radius: 15px;
+    z-index: 1;
+
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+    
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.vr-title{
+    font-family: 'Fredoka One', cursive;
+}
+
+.vr-desc{
+    font-family: 'Skranji', cursive;
+}
+
+button.vr-button{
+    font-family: 'Fredoka One', cursive;
+}

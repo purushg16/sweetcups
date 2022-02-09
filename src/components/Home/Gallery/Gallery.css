@@ -1,0 +1,23 @@
+
+#gallery-section{
+    margin: 5% auto;
+    padding-top: 3% !important;
+    padding: 10%;
+    background: #f8ebec;
+}
+
+#gallery-heading{
+    color: brown;
+    margin: 2% 7% 5%;
+
+    font-family: 'Righteous', cursive;
+    
+}
+
+
+.gallery-desc {
+    padding-top: 4%;
+    font-family: 'Supermercado One', cursive;
+    font-size: 1.7vw;
+    color: #F3A09F;
+}
