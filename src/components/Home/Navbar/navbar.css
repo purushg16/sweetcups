@@ -44,7 +44,7 @@
 
 .nav-link-section{
     margin: auto 5% !important;
-    width: 100%;
+    width: 100% !important;
 }
 
 .button-div{
@@ -271,7 +271,7 @@ a#brand{
 
 
 .vr-card{
-    position: absolute;
+    position: absolute !important;
     bottom: -90px;
     padding: 2%;
     background: #F1D6D9;
@@ -280,8 +280,8 @@ a#brand{
     border-radius: 15px;
     z-index: 1;
 
-    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
+    animation: zoomIn !important; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s !important; 
     
     background-image: url("https://www.transparenttextures.com/patterns/connected.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
