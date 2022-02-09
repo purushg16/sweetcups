@@ -236,7 +236,7 @@ a#brand{
 
 
 .vr-button{
-    border-radius: 999px;
+    border-radius: 999px !important;
     background: #F28C3C;
     color: aliceblue;
     font-family: 'Dongle', sans-serif;
