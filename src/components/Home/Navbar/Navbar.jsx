@@ -17,9 +17,13 @@ export default class Navbar extends React.Component {
                 "const screenSize = screen.width; \n" +
                 "if(screenSize <= 425){ \n" +
                 "document.querySelector('#uk-top').style.cssText = 'background-size: 100% 120% !important'; \n" +
+                "}else\n"+
+                "if(screenSize <= 598){ \n" +
+                "document.querySelector('#uk-top').style.cssText = 'background-size: 140% 120% !important'; \n" +
                 "}});\n" ;
 
         const scriptTag = document.createElement("script");
+        scriptTag.async = true;
         scriptTag.text = scriptText;
 
         document.body.appendChild(Ulkitscript1);
@@ -37,7 +41,7 @@ export default class Navbar extends React.Component {
 
                 <div id="uk-top">
 
-                    <div className="uk-card nav-card uk-card-body uk-width-1-2@m">
+                    <div className="uk-card nav-card uk-card-body uk-width-1-2@m uk-width-1-2@l">
                         <h3 className="uk-card-title brand-title">  <a id="brand" href="/"> <img alt="" src={logo} /> Sweetcups Bangalore </a> </h3>
                         <div className="uk-width-1-2@m uk-text-center nav-link-section">
 
