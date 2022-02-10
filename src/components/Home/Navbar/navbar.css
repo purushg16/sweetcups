@@ -26,7 +26,7 @@
 }
 
 #uk-top{
-    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image.jpg') !important;
+    background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image.jpg');
 
     background-size: 100% 120% !important;
     background-repeat: no-repeat;
@@ -38,7 +38,14 @@
 
 }
 
-#nav-section .uk-card-body:not(.vr-card){
+
+@media (max-width: 480px) {
+    #uk-top{
+        background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image2.jpg') !important;
+    }
+}
+
+#nav-section .uk-card-body:not(.vr-card ):not(.vr-card-2){
     padding: 15% 0px !important;
 }
 
@@ -287,6 +294,21 @@ a#brand{
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+.vr-card-2{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .vr-card{
+        display: none;
+    }
+
+    .vr-card-2{
+        display:block;
+        padding: 10% 10% !important;
+    }
+}
+
 .vr-title{
     font-family: 'Fredoka One', cursive !important;
 }
@@ -297,4 +319,14 @@ a#brand{
 
 button.vr-button{
     font-family: 'Fredoka One', cursive !important;
+}
+
+
+
+/* screen-width: 960 - 972 */
+
+@media (min-width: 960px) and (max-width:972px) {
+    ul:not(.uk-slideshow-items) {
+        margin-left: 40px !important;
+    }
 }

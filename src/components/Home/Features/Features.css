@@ -11,6 +11,18 @@
     transition: all 1s;
 }
 
+@media (max-width: 948px) {
+    #feature-section{
+        margin-top: 0% !important;
+    }
+}
+
+@media (max-width:1181px) {
+    #feature-section{
+        margin-top: 10%;
+    }
+}
+
 .uk-first-column{
     padding-left: 0% !important;
 }
