@@ -288,13 +288,13 @@ a#brand{
 }
 
 .vr-title{
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', cursive !important;
 }
 
 .vr-desc{
-    font-family: 'Skranji', cursive;
+    font-family: 'Skranji', cursive !important;
 }
 
 button.vr-button{
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', cursive !important;
 }

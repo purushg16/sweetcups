@@ -12,19 +12,19 @@
 }
 
 .uk-first-column{
-    padding-left: 0%;
+    padding-left: 0% !important;
 }
 
 .uk-card-feature{
-    margin: auto 3%;
+    margin: auto 3% !important;
 }
 
 .uk-grid{
-    margin-left: 0%;
+    margin-left: 0% !important;
 }
 
 .f-img{
-    width: 70%;
+    width: 60% !important;
     border-radius: 999px;
     border: 2px #000;
 }
@@ -33,7 +33,7 @@
     color: #ED65A9 !important;
     font-family: 'Righteous', cursive;
 
-    margin-top: 10%;
+    margin-top: 10% !important;
 }
 
 .img-p{

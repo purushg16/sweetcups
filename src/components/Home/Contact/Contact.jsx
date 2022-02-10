@@ -16,9 +16,9 @@ function Contact() {
                             <div class="uk-width-1-1@s uk-width-2-1@m uk-width-2-1@l">
 
                                 <ul class="uk-nav-default uk-nav-parent-icon" uk-nav='true'>
-                                    <li className="contact-li" > <a><span class="uk-margin-small-right" uk-icon="icon: receiver"></span> +91­82172 61791  </a></li>
-                                    <li className="contact-li" > <a><span class="uk-margin-small-right" uk-icon="icon: location"></span> mail@mail.com </a></li>
-                                    <li className="contact-li" > <a><span class="uk-margin-small-right" uk-icon="icon: mail"></span> <span>Jayanagar, Bangalore</span> </a></li>
+                                    <li className="contact-li" > <a> <img className='contact-icon' src="https://img.icons8.com/fluency/30/000000/ringing-phone.png" alt=""/> +91­82172 61791  </a></li>
+                                    <li className="contact-li" > <a> <img className='contact-icon' src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/30/000000/external-mail-mail-vitaliy-gorbachev-blue-vitaly-gorbachev-9.png" alt=""/> mail@mail.com </a></li>
+                                    <li className="contact-li" > <a> <img className='contact-icon'  src="https://img.icons8.com/flat-round/30/000000/anchor-nodes.png" alt=""/>  <span>Jayanagar, Bangalore</span> </a></li>
                                 </ul>
 
                             </div>
