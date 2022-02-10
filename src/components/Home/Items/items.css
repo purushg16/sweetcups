@@ -48,3 +48,14 @@
     font-family: 'Supermercado One', cursive;
     color: aliceblue;
 }
+
+@media (max-width: 639px) {
+    
+    .t-row{
+        width: 40% !important;
+    }
+    
+    #items-h3{
+        padding: 0% 10%;
+    }
+}

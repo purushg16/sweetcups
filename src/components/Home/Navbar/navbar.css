@@ -29,18 +29,17 @@
     background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image.jpg');
 
     background-size: 100% 120% !important;
-    background-repeat: no-repeat;
     background-position: 0 -70px !important;
-
-    /* border-right: 5px solid #f1d6d9; */
     border-bottom: 5px solid #f1d6d9;
     position:relative;
 
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     #uk-top{
+        background-size: 100% 120% !important;
+
         height: 433px !important;
         background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image3.jpg') !important;
     }
@@ -210,9 +209,7 @@ a#brand{
 
 @media (max-width: 342px) {
     #uk-top{
-        padding-left: 10% !important;
         width: 100%;
-        background-position: -15px -10px !important;
     }
 
     a#brand{
