@@ -96,7 +96,7 @@ li a {
     transition: all 1s !important;
     font-family: 'Righteous', cursive;
 
-    font-size: 1.1vw;
+    font-size: 1vw;
 }
 
 li a:hover {
@@ -260,7 +260,7 @@ a#brand{
 } 
 
 .uk-card-body{
-    padding-top: 0px;
+    padding-top: 0px !important;
 }
 
 @media (max-width: 959px) {

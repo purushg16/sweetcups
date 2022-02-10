@@ -9,30 +9,31 @@ function Features() {
 
             <div class="uk-child-width-expand@s uk-text-center" uk-grid='true'>
                 <div class="uk-card uk-card uk-card-feature">
-                    <div class="uk-card-media-top">
-                        <img src={f1} alt="" className="f-img" />
-                    </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title feature-title"> Fresh </h3>
-                        <p className = "img-p" > Fresh food - good health </p>
+
+                        <div class="uk-card-media-top">
+                            <img src={f1} alt="" className="f-img" />
+                        </div>
+                        <p className="img-p" > Fresh food - good health </p>
                     </div>
                 </div>
                 <div class="uk-card uk-card uk-card-feature">
-                    <div class="uk-card-media-top">
-                        <img src={f2} alt="" className="f-img" />
-                    </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title feature-title"> Savour </h3>
-                        <p className = "img-p" > Your tongue won't obey you. </p>
+                        <div class="uk-card-media-top">
+                            <img src={f2} alt="" className="f-img" />
+                        </div>
+                        <p className="img-p" > Your tongue won't obey you. </p>
                     </div>
                 </div>
                 <div class="uk-card uk-card uk-card-feature">
-                    <div class="uk-card-media-top">
-                        <img src={f3} alt="" className="f-img" />
-                    </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title feature-title"> Home Made </h3>
-                        <p className = "img-p" > We care the food. </p>
+                        <div class="uk-card-media-top">
+                            <img src={f3} alt="" className="f-img" />
+                        </div>
+                        <p className="img-p" > We care the food. </p>
                     </div>
                 </div>
             </div>
