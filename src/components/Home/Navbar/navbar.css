@@ -45,7 +45,7 @@
     }
 }
 
-#nav-section .uk-card-body:not(.vr-card ):not(#vr-card-2){
+#nav-section .uk-card-body:not(#vr-card ):not(#vr-card-2){
     padding: 15% 0px !important;
 }
 
@@ -277,7 +277,7 @@ a#brand{
 }
 
 
-.vr-card{
+#vr-card{
     position: absolute !important;
     bottom: -90px;
     padding: 2%;
@@ -299,12 +299,12 @@ a#brand{
 }
 
 @media (max-width: 768px) {
-    .vr-card{
-        display: none;
+    #vr-card{
+        display: none !important;
     }
 
     #vr-card-2{
-        display:block;
+        display:block !important;
         padding: 10% 10% !important;
     }
 }
