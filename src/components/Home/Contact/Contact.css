@@ -18,7 +18,7 @@ h2.contact-title:not(.logo-name){
 li.contact-li a{
     width: 100%;
     font-family: 'Supermercado One', cursive;
-    font-size: 1.5vw !important;
+    font-size: 100% !important;
 
     color: rgb(253, 158, 158) !important;
 }
