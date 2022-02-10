@@ -48,7 +48,7 @@ export default class Navbar extends React.Component {
 
                 </div>
 
-                <div className="uk-card vr-card-2 uk-card-body">
+                <div className="uk-card uk-card-body" id="vr-card-2">
                     <h3 className="uk-card-title vr-title"> Wanna See Us ? </h3>
                     <p className="vr-desc"> Click here to Experience Virtual Reality Based cake shop </p>
                     <a href="http://ivandayas.tiiny.site" target='_blank'> <button className="uk-button vr-button"> Visit Us </button> </a>

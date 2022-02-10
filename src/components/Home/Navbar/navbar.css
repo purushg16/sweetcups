@@ -45,7 +45,7 @@
     }
 }
 
-#nav-section .uk-card-body:not(.vr-card ):not(.vr-card-2){
+#nav-section .uk-card-body:not(.vr-card ):not(#vr-card-2){
     padding: 15% 0px !important;
 }
 
@@ -294,7 +294,7 @@ a#brand{
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-.vr-card-2{
+#vr-card-2{
     display: none;
 }
 
@@ -303,7 +303,7 @@ a#brand{
         display: none;
     }
 
-    .vr-card-2{
+    #vr-card-2{
         display:block;
         padding: 10% 10% !important;
     }
