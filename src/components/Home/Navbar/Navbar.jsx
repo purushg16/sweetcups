@@ -30,9 +30,9 @@ export default class Navbar extends React.Component {
                             <div className="uk-width-1-2@m uk-text-center nav-link-section">
 
                                 <ul className="nav-ul">
-                                    <li><a href="#about-section"> About </a></li>
+                                    <li><a href="#feature-section"> About </a></li>
                                     <li><a href="#contact-section"> Contact </a></li>
-                                    <li><a href="#contact-section"> Services </a></li>
+                                    <li><a href="#items-section"> Services </a></li>
                                     <li><a href="#gallery-section"> Gallery </a></li>
                                 </ul>
                                 
