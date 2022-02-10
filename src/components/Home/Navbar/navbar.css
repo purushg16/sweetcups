@@ -44,7 +44,7 @@
 
 .nav-link-section{
     margin: auto 5% !important;
-    width: 100%;
+    width: 100% !important;
 }
 
 .button-div{
@@ -71,8 +71,8 @@ ul:not(.uk-slideshow-items) {
 }
 
 .nav-ul{
-    padding-left: 0px;
-    transition: all 0.5s;
+    padding-left: 0px !important;
+    transition: all 0.5s !important;
 }
 
 .nav-ul li {
@@ -236,11 +236,11 @@ a#brand{
 
 
 .vr-button{
-    border-radius: 999px;
-    background: #F28C3C;
-    color: aliceblue;
-    font-family: 'Dongle', sans-serif;
-    font-size: larger;
+    border-radius: 999px !important;
+    background: #F28C3C !important;
+    color: aliceblue !important;
+    font-family: 'Dongle', sans-serif !important;
+    font-size: larger !important;
 }
 
 .nav-info-title{
@@ -271,7 +271,7 @@ a#brand{
 
 
 .vr-card{
-    position: absolute;
+    position: absolute !important;
     bottom: -90px;
     padding: 2%;
     background: #F1D6D9;
@@ -280,8 +280,8 @@ a#brand{
     border-radius: 15px;
     z-index: 1;
 
-    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
+    animation: zoomIn !important; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s !important; 
     
     background-image: url("https://www.transparenttextures.com/patterns/connected.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
