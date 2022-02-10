@@ -13,11 +13,11 @@ export default class Navbar extends React.Component {
         Ulkitscript2.src = "https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js";
         Ulkitscript2.async = true;
 
-        const scriptText = "document.addEventListener('DOMContentLoaded', function(){" +
-            "const screenSize = screen.width;" +
-            "if(screenSize === 425){" +
-            "document.querySelector('#uk-top').style.cssText = 'background-size: 100% 120% !important';" +
-            "}});" ;
+        const scriptText = "document.addEventListener('DOMContentLoaded', function(){ \n" +
+                "const screenSize = screen.width; \n" +
+                "if(screenSize <= 425){ \n" +
+                "document.querySelector('#uk-top').style.cssText = 'background-size: 100% 120% !important'; \n" +
+                "}});\n" ;
 
         const scriptTag = document.createElement("script");
         scriptTag.text = scriptText;
