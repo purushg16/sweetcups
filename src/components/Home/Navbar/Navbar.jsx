@@ -14,13 +14,13 @@ export default class Navbar extends React.Component {
         Ulkitscript2.async = true;
 
         const scriptText = "document.addEventListener('DOMContentLoaded', function(){ \n" +
-                "const screenSize = screen.width; \n" +
-                "if(screenSize <= 425){ \n" +
-                "document.querySelector('#uk-top').style.cssText = 'background-size: 100% 120% !important'; \n" +
-                "}else\n"+
-                "if(screenSize <= 598){ \n" +
-                "document.querySelector('#uk-top').style.cssText = 'background-size: 140% 120% !important'; \n" +
-                "}});\n" ;
+            "const screenSize = screen.width; \n" +
+            "if(screenSize <= 425){ \n" +
+            "document.querySelector('#uk-top').style.cssText = 'background-size: 100% 120% !important'; \n" +
+            "}else\n" +
+            "if(screenSize <= 598){ \n" +
+            "document.querySelector('#uk-top').style.cssText = 'background-size: 140% 120% !important'; \n" +
+            "}});\n";
 
         const scriptTag = document.createElement("script");
         scriptTag.async = true;
@@ -40,6 +40,20 @@ export default class Navbar extends React.Component {
             <section id="nav-section">
 
                 <div id="uk-top">
+
+                    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click">
+                        <div class="uk-navbar-left">
+
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active"> <a id="brand" href="/"> <img alt="" src={logo} /> Sweetcups Bangalore </a> </li>
+                                <li><a href="#feature-section"> About </a></li>
+                                <li><a href="#contact-section"> Contact </a></li>
+                                <li><a href="#items-section"> Services </a></li>
+                                <li><a href="#gallery-section"> Gallery </a></li>
+                            </ul>
+
+                        </div>
+                    </nav>
 
                     <div className="uk-card nav-card uk-card-body uk-width-1-2@m uk-width-1-2@l">
                         <h3 className="uk-card-title brand-title">  <a id="brand" href="/"> <img alt="" src={logo} /> Sweetcups Bangalore </a> </h3>

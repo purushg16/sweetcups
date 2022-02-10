@@ -28,7 +28,7 @@
 #uk-top{
     background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image.jpg');
 
-    background-size: 80% 100% !important;
+    background-size: 100% 120% !important;
     background-position: 0 -55px !important;
     background-repeat: no-repeat;
     border-bottom: 5px solid #f1d6d9;
@@ -46,6 +46,21 @@
     }
 }
 
+
+@media (min-width: 598px) {
+    nav{
+        display: none;
+    }
+}
+
+@media (max-width: 598px) {
+    nav{
+        display: block;
+    }
+    .nav-card{
+        display: none;
+    }
+}
 
 @media (max-width: 598px) and (min-width: 430px) {
     #uk-top{
