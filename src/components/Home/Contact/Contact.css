@@ -20,6 +20,27 @@ ul.contact-ul{
     padding: 0% 2% !important;
 }
 
+
+@media (max-width: 639px) {
+    ul.contact-ul{
+        margin-left: 20% !important;
+    }
+
+    div.uk-card-contact{
+        padding-left:  0px !important;
+        padding-right: 0px !important;
+    }
+
+}
+
+@media (max-width: 375px) {
+    ul.contact-ul{
+        margin-left: 15% !important;
+    }
+
+}
+
+
 li.contact-li a{
     width: 100%;
     font-family: 'Supermercado One', cursive;
@@ -27,6 +48,15 @@ li.contact-li a{
 
     color: rgb(253, 158, 158) !important;
 }
+
+
+@media (max-width: 639px) {
+
+    li.contact-li a{
+        font-size: 100% !important;
+    }
+}
+
 
 #logo{
     width: 30%;

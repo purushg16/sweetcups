@@ -23,6 +23,7 @@
 }
 
 p#gallery-p {
+    font-size: 90% !important;
     font-family: 'Supermercado One', cursive;
     color: rgb(158, 70, 70);
 }

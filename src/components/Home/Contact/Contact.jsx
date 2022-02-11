@@ -29,7 +29,7 @@ function Contact() {
                     <div>
                         <div class="uk-card uk-card-contact-2 uk-card-body">
                             <img src={logo} alt="" id='logo' />
-                            <h2 class="contact-title logo-name"> Sweetcups Bangalore </h2>
+                            <h2 class="contact-title logo-name"> Sweetcups <span> Bangalore </span> </h2>
                             <p> Since 2002 </p>
                         </div>
                     </div>
