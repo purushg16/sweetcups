@@ -47,14 +47,14 @@ export default class Navbar extends React.Component {
                             <ul class="uk-navbar-nav">
                                 <li class="uk-active"> <a id="brand" href="/"> <img alt="" src={logo} /> Sweetcups <span>Bangalore</span> </a> </li>
                                 
-                                <li><a href="#"> About </a></li>
-                                <li><a href="#"> Gallery </a></li>
+                                <li><a href="#feature-section"> About </a></li>
+                                <li><a href="#gallery-section"> Gallery </a></li>
                                 <li>
                                     <a href="#"> Contact </a>
                                     <div class="uk-navbar-dropdown">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="#"> Contact </a></li>
-                                            <li class="uk-active"><a href="#"> Services </a></li>
+                                            <li class="uk-active"><a href="#contact-section"> Contact </a></li>
+                                            <li class="uk-active"><a href="#items-section"> Services </a></li>
                                         </ul>
                                     </div>
                                 </li>

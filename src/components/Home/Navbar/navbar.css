@@ -58,6 +58,10 @@
     }
 }
 
+div.uk-navbar-dropdown {
+    transition: all 0.8s !important;
+}
+
 @media (max-width: 598px) {
     nav{
         display: block;
@@ -89,6 +93,10 @@
         font-size: 2.5vw !important;
         padding-left: 0px !important;
     }
+
+    div.uk-navbar-dropdown {
+        background-color: #d6f7ff !important;
+    }
 }
 
 
@@ -105,6 +113,10 @@
 
     #uk-top{
         border-bottom: 5px solid #252424 !important;
+    }
+
+    div.uk-navbar-dropdown {
+        background-color: rgb(255, 221, 255) !important;
     }
 }
 
