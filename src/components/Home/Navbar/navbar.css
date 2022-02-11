@@ -44,11 +44,6 @@
         height: 433px !important;
         background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image3.jpg') !important;
     }
-
-    nav.uk-navbar-container {
-        padding-bottom: 2% !important;
-        background-color: #682d06 !important;
-    }
 }
 
 
@@ -123,15 +118,15 @@ div.uk-navbar-dropdown {
 
     nav.uk-navbar-container {
         padding-bottom: 2% !important;
-        background-color: #252424 !important;
+        background-color: #f1d6d9 !important;
     }
 
     ul.uk-navbar-nav li a{
-        color: #8f2d8a !important;
+        color: #fdfdfd !important;
     }
 
     #uk-top{
-        border-bottom: 5px solid #252424 !important;
+        border-bottom: 5px solid #f1d6d9 !important;
     }
 
     div.uk-navbar-dropdown {

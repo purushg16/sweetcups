@@ -19,6 +19,14 @@
     position: relative;
 }
 
+
+@media (max-width: 948px) {
+    #items-section{
+        margin-top: 5% !important;
+        border-radius: 0px !important;
+    }
+}
+
 .first-section{
     margin-bottom: 1% !important;
     position: relative !important;
