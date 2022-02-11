@@ -75,7 +75,7 @@ div.uk-navbar-dropdown {
 
     ul.uk-navbar-nav{
         margin: 0% !important;
-        padding: 0% 5% !important;
+        padding: 0% 15% !important;
     }
 
     nav.uk-navbar-container {
@@ -84,13 +84,13 @@ div.uk-navbar-dropdown {
     }
 
     ul.uk-navbar-nav li a{
-        font-size: 2vw !important;
+        font-size: 2.5vw !important;
         font-family: 'Righteous', cursive;
         color: #7ae3fd !important;
     }
 
     a#brand{
-        font-size: 2.5vw !important;
+        font-size: 5vw !important;
         padding-left: 0px !important;
     }
 
