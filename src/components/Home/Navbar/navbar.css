@@ -135,6 +135,17 @@ div.uk-navbar-dropdown {
 }
 
 
+@media (max-width: 320px)   {
+    ul.uk-navbar-nav
+    {
+        padding: 0 1%!important;
+    }
+
+    a#brand{
+        font-size: 6.2vw !important;
+    }
+}
+
 
 @media (max-width: 598px) and (min-width: 430px) {
     #uk-top{

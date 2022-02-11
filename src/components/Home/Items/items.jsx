@@ -10,7 +10,9 @@ function Items() {
     return (
         <section id='items-section'>
 
+            <div id='item-h3-section'>
             <h3 id='items-h3'> SweetCups Bangalore serves the following freshly made and custom made-to-order </h3>
+            </div>
 
             <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s first-section uk-text-center" uk-grid='true'>
                 <div>

@@ -14,7 +14,7 @@
     margin-top: 2%;
     padding: 2% 5%;
     border-radius: 99px 99px 9px 9px;
-    background: #681817;
+    background: #ff606d;
 
     position: relative;
 }
@@ -24,7 +24,25 @@
     #items-section{
         margin-top: 5% !important;
         border-radius: 0px !important;
+        padding-top: 0% !important;
+        padding-right: 0% !important;
+        padding-left: 0% !important;
     }
+
+    #item-h3-section{
+        font-family: 'Righteous', cursive;
+        padding: 2% 1% !important;
+        margin: 0% !important;
+        margin-bottom: 5% !important;
+        background: rgb(206, 84, 94);
+
+    }
+
+    h3#items-h3{
+        font-size: 1rem !important;
+        color: #ffffff;
+    }
+    
 }
 
 .first-section{
