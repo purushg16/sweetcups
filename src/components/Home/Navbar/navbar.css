@@ -102,6 +102,10 @@ div.uk-navbar-dropdown {
     ul.uk-navbar-nav{
         margin: 0% 18% !important;
     }
+
+    a#brand{
+        font-size: 6.5vw !important;
+    }
 }
 
 
