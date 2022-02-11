@@ -74,8 +74,7 @@ div.uk-navbar-dropdown {
     }
 
     ul.uk-navbar-nav{
-        margin: 0% !important;
-        padding: 0% 15% !important;
+        margin: 0% 15% !important;
     }
 
     nav.uk-navbar-container {
@@ -90,12 +89,18 @@ div.uk-navbar-dropdown {
     }
 
     a#brand{
-        font-size: 5vw !important;
+        font-size: 6vw !important;
         padding-left: 0px !important;
     }
 
     div.uk-navbar-dropdown {
         background-color: #d6f7ff !important;
+    }
+}
+
+@media (max-width: 598px) and (min-width: 470px) {
+    ul.uk-navbar-nav{
+        margin: 0% 18% !important;
     }
 }
 
@@ -139,9 +144,14 @@ div.uk-navbar-dropdown {
         height: 433px !important;
         background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image4.jpg') !important;
     }
+
+    a#brand{
+            font-size: 6.5vw;
+            padding: 0% 2%;
+    }
 }
 
-@media (min-width: 375px) and (max-width: 430px) {
+@media (min-width: 376px) and (max-width: 430px) {
     a#brand{
         padding-right: 8% !important;
     }
