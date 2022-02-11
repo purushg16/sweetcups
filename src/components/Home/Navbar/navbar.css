@@ -102,6 +102,16 @@ div.uk-navbar-dropdown {
 
 
 @media (max-width: 430px) {
+
+    ul.uk-navbar-nav{
+        margin: 0% !important;
+        padding: 0% 5% !important;
+    }
+
+    a#brand{
+        padding-right: 12% !important;
+    }
+
     nav.uk-navbar-container {
         padding-bottom: 2% !important;
         background-color: #252424 !important;
@@ -128,6 +138,16 @@ div.uk-navbar-dropdown {
 
         height: 433px !important;
         background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image4.jpg') !important;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 430px) {
+    a#brand{
+        padding-right: 8% !important;
+    }
+
+    ul.uk-navbar-nav{
+        padding: 0% 12% !important;
     }
 }
 
