@@ -13,7 +13,7 @@ function Gallery() {
             <div className="uk-position-relative uk-visible-toggle uk-light" tabIndex="-1" uk-slideshow="animation: pull">
 
                 <h2 id='gallery-heading'> Gallery </h2>
-                <p id="gallery-p" > Swipe to see our delicious products </p>
+                <p id="gallery-p" > ~ Swipe to see our delicious products ~ </p>
 
                 <ul className="uk-slideshow-items">
                     <li>

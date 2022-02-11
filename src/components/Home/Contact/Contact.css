@@ -15,10 +15,15 @@ h2.contact-title:not(.logo-name){
 }
 
 
+ul.contact-ul{
+    margin-left: 0% !important;
+    padding: 0% 2% !important;
+}
+
 li.contact-li a{
     width: 100%;
     font-family: 'Supermercado One', cursive;
-    font-size: 100% !important;
+    font-size: 120% !important;
 
     color: rgb(253, 158, 158) !important;
 }
