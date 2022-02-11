@@ -37,7 +37,7 @@
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 598px) {
     #uk-top{
         background-size: 100% 120% !important;
 
@@ -74,22 +74,27 @@ div.uk-navbar-dropdown {
 
     nav.uk-navbar-container {
         padding-bottom: 2% !important;
-        background-color: #d6f7ff !important;
+        background-color: #f1d6d9 !important;
     }
 
     ul.uk-navbar-nav li a{
         font-size: 2.5vw !important;
         font-family: 'Righteous', cursive;
-        color: #7ae3fd !important;
+        color: #fdfdfd !important;
+
     }
 
+    #uk-top{
+        border-bottom: 5px solid #f1d6d9 !important;
+    }
+    
     a#brand{
         font-size: 6vw !important;
         padding-left: 0px !important;
     }
 
     div.uk-navbar-dropdown {
-        background-color: #d6f7ff !important;
+        background-color: rgb(255, 221, 255) !important;
     }
 }
 
@@ -116,22 +121,6 @@ div.uk-navbar-dropdown {
         padding-right: 12% !important;
     }
 
-    nav.uk-navbar-container {
-        padding-bottom: 2% !important;
-        background-color: #f1d6d9 !important;
-    }
-
-    ul.uk-navbar-nav li a{
-        color: #fdfdfd !important;
-    }
-
-    #uk-top{
-        border-bottom: 5px solid #f1d6d9 !important;
-    }
-
-    div.uk-navbar-dropdown {
-        background-color: rgb(255, 221, 255) !important;
-    }
 }
 
 
@@ -148,12 +137,12 @@ div.uk-navbar-dropdown {
 
 
 @media (max-width: 598px) and (min-width: 430px) {
-    #uk-top{
+    /* #uk-top{
         background-size: 100% 120% !important;
 
         height: 433px !important;
         background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('./image4.jpg') !important;
-    }
+    } */
 
     a#brand{
             font-size: 6.5vw;
