@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import logo from "./logo1.png";
+import logo from "./logo.png";
 
 export default class Navbar extends React.Component {
 
@@ -43,7 +43,7 @@ export default class Navbar extends React.Component {
 
                     <nav class="uk-navbar-container" uk-navbar='true'>
                         <div class="uk-navbar-center">
-                        <a id="brand" href="/"> <img alt="" src={logo} /> Sweetcups <span>Bangalore</span> </a>
+                        <a id="brand" href="/"> <img alt="" src={logo} /> </a>
                             <ul class="uk-navbar-nav">
                                 <li><a href="#feature-section"> About </a></li>
                                 <li><a href="#gallery-section"> Gallery </a></li>
@@ -55,7 +55,7 @@ export default class Navbar extends React.Component {
                     </nav>
 
                     <div className="uk-card nav-card uk-card-body uk-width-1-2@m uk-width-1-2@l">
-                        <h3 className="uk-card-title brand-title">  <a id="brand" href="/"> <img alt="" src={logo} /> Sweetcups Bangalore </a> </h3>
+                        <h3 className="uk-card-title brand-title"> <img alt="" src={logo} /> </h3>
                         <div className="uk-width-1-2@m uk-text-center nav-link-section">
 
                             <ul className="nav-ul">
@@ -71,7 +71,7 @@ export default class Navbar extends React.Component {
                     <div className="uk-card uk-card-body" id="vr-card">
                         <h3 className="uk-card-title vr-title"> Wanna See Us ? </h3>
                         <p className="vr-desc"> Click here to Experience Virtual Reality Based cake shop </p>
-                        <a href="http://ivandayas.tiiny.site" target='_blank'> <button className="uk-button vr-button"> Visit Us </button> </a>
+                        <a href="https://eloquent-bartik-8f7cbf.netlify.app/" target='_blank'> <button className="uk-button vr-button"> Visit Us </button> </a>
                     </div>
 
 
@@ -80,7 +80,7 @@ export default class Navbar extends React.Component {
                 <div className="uk-card uk-card-body" id="vr-card-2">
                     <h3 className="uk-card-title vr-title"> Wanna See Us ? </h3>
                     <p className="vr-desc"> Click here to Experience Virtual Reality Based cake shop </p>
-                    <a href="http://ivandayas.tiiny.site" target='_blank'> <button className="uk-button vr-button"> Visit Us </button> </a>
+                    <a href="https://eloquent-bartik-8f7cbf.netlify.app/" target='_blank'> <button className="uk-button vr-button"> Visit Us </button> </a>
                 </div>
 
             </section>
