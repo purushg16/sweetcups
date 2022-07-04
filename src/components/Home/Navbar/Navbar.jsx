@@ -48,7 +48,7 @@ export default class Navbar extends React.Component {
                                 <li><a href="#feature-section"> About </a></li>
                                 <li><a href="#gallery-section"> Gallery </a></li>
                                 <li><a href="#contact-section"> Contact </a></li>
-                                <li><a href="#items-section"> Services </a></li>
+                                <li><a href="#order-section"> Order Now </a></li>
                             </ul>
 
                         </div>
@@ -61,8 +61,8 @@ export default class Navbar extends React.Component {
                             <ul className="nav-ul">
                                 <li><a href="#feature-section"> About </a></li>
                                 <li><a href="#contact-section"> Contact </a></li>
-                                <li><a href="#items-section"> Services </a></li>
                                 <li><a href="#gallery-section"> Gallery </a></li>
+                                <li><a href="#order-section"> Order Now </a></li>
                             </ul>
 
                         </div>
