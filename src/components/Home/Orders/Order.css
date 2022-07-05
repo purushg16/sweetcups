@@ -32,3 +32,23 @@ span.MuiTypography-body1{
 div.MuiCardHeader-root{
     background: navajowhite;
 }
+
+.MuiGrid-grid-xs-10{
+    padding-left: 0 !important;
+}
+
+.MuiGrid-item.MuiGrid-grid-xs-true {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button#left-nav, button#right-nav {
+    background: rgb(255 255 255 / 0%);
+    border: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+
+button#left-nav:hover, button#right-nav:hover {
+    background: rgba(255, 255, 255, 0.503);
+}
