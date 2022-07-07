@@ -1,140 +1,102 @@
-import React, { Component } from 'react'
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./styles.css";
 import "./Order.css";
-// import HorizontalScroll from 'react-scroll-horizontal';
+
+import OrderCard from "./OrderCard";
 import img1 from "./img-1.jpg";
 import img2 from "./img-2.jpg";
 import img3 from "./img-3.jpg";
-import img4 from "./img-4.jpg";
-import OrderCard from './OrderCard';
-import Grid from '@mui/material/Grid';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+// import required modules
+import { Pagination, Navigation } from "swiper";
 
+export default function Order() {
+    const [swiperRef, setSwiperRef] = useState(null);
 
-export default class Order extends Component {
+    //   let appendNumber = 4;
+    //   let prependNumber = 1;
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            shift: 0,
-            nDiv: 0,
-            maxWid: 0
-        };
-        this.myInput = React.createRef()
-    }
+    //   const prepend2 = () => {
+    //     swiperRef.prependSlide([
+    //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+    //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+    //     ]);
+    //   };
 
-    componentDidMount() {
+    //   const prepend = () => {
+    //     swiperRef.prependSlide(
+    //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+    //     );
+    //   };
 
-        setTimeout((function () {
-            const mw = Number(this.myInput.current.id) * 400;
+    //   const append = () => {
+    //     swiperRef.appendSlide(
+    //       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+    //     );
+    //   };
 
-            this.setState({ maxWid: 0-mw/3 })
-            console.log(this.state.maxWid);
-        }).bind(this), 100);
-    }
+    //   const append2 = () => {
+    //     swiperRef.appendSlide([
+    //       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+    //       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+    //     ]);
+    //   };
 
-    translateleft = () => {
-        if (this.state.shift !== 0) this.setState({ shift: this.state.shift + 400 })
-        else {
-            console.log('yes')
-            this.setState({ shift: 100 - this.state.shift })
-            setTimeout(() => this.setState({ shift: 0 }), 700);
-        }
-    }
+    return (
+        <section id="order-section">
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={1}
+                // navigation={{
+                //     enabled : true
+                // }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+            >
 
-    translateright = () => {
-        if(this.state.shift !== this.state.maxWid) this.setState({ shift: this.state.shift - 400 })
-        else {
-            console.log('yes')
-            this.setState({ shift: this.state.shift - 100 })
-            setTimeout(() => this.setState({ shift: this.state.maxWid }), 700);
-        }
+                <SwiperSlide> <OrderCard src={img1} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
+                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
+                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
+                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
+                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
+                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
+            </Swiper>
 
-    }
-
-    render() {
-        const child = { width: `25em`, height: `100%`, display: `flex` }
-        const parent = { height: `22.7rem`, padding: `3% 0% 5%` }
-
-        const scroll = {
-            // `translate3d(${this.state.shift}, 0px, 0px)`
-            transform: `translate3d(${this.state.shift}px, 0px, 0px)`,
-            display: 'inline-flex', height: '100%',
-            position: 'absolute',
-            willChange: 'transform',
-            transition: 'all 1s'
-        }
-
-        return (
-            <section id="order-section">
-                <h3 id='order-heading'>  See what we have </h3>
-                <p style={{ 'fontFamily': 'Righteous' }}> choose what you love and order </p>
-
-
-                <Grid container spacing={3}>
-                    <Grid item xs>
-                        <button id='left-nav' onClick={() => this.translateleft()}> <KeyboardDoubleArrowLeftIcon fontSize='large' /> </button>
-                    </Grid>
-
-                    <Grid item xs={10}>
-
-                        <div style={parent}>
-                            <div class="scroll-horizontal " style={{ height: '100%', width: '100%', overflow: 'hidden', position: 'relative' }}>  {/* ref={this.myInput} */}
-
-                                <div style={scroll}>
-
-                                    <div style={child} id={1}>
-                                        <OrderCard src={img1} name='red velvet' price={'1000 /.'} />
-                                    </div>
-                                    <div style={child} id={2}>
-                                        <OrderCard src={img2} name='butterscotch mix' price={'1400 /.'} />
-                                    </div>
-                                    <div style={child} id={3}>
-                                        <OrderCard src={img3} name='honeyfilled one' price={'1200 /.'} />
-                                    </div>
-                                    <div style={child} id={4} >
-                                        <OrderCard src={img4} name='trampoline honey' price={'1200 /.'} />
-                                    </div>
-                                    <div style={child} id={5}>
-                                        <OrderCard src={img1} name='red velvet' price={'1000 /.'} />
-                                    </div>
-                                    <div id={6} ref={this.myInput} style={child}>
-                                        <OrderCard src={img1} name='red velvet' price={'1000 /.'} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </Grid>
-
-                    <Grid item xs>
-                        <button id='right-nav' onClick={() => this.translateright()}> <KeyboardDoubleArrowRightIcon fontSize='large' /> </button>
-                    </Grid>
-                </Grid>
-
-            </section >
-        )
-    }
+            {/* <p className="append-buttons">
+        <button onClick={() => prepend2()} className="prepend-2-slides">
+          Prepend 2 Slides
+        </button>
+        <button onClick={() => prepend()} className="prepend-slide">
+          Prepend Slide
+        </button>
+        <button onClick={() => append()} className="append-slide">
+          Append Slide
+        </button>
+        <button onClick={() => append2()} className="append-2-slides">
+          Append 2 Slides
+        </button>
+      </p> */}
+        </section>
+    );
 }
-
-
-
-// {/* <div class="scroll-horizontal " style="height: 100%; width: 100%; overflow: hidden; position: relative;">
-//                             <div style="transform: translate3d(0px, 0px, 0px); display: inline-flex; height: 100%; position: absolute; will-change: transform;">
-//                                 <div style={child}>
-//                                     <OrderCard src={img1} name='red velvet' price={'1000 /.'} />
-//                                 </div>
-//                                 <div style={child}>
-//                                     <OrderCard src={img2} name='butterscotch mix' price={'1400 /.'} />
-//                                 </div>
-//                                 <div style={child}>
-//                                     <OrderCard src={img3} name='honeyfilled one' price={'1200 /.'} />
-//                                 </div>
-//                                 <div style={child}>
-//                                     <OrderCard src={img4} name='trampoline honey' price={'1200 /.'} />
-//                                 </div>
-//                                 <div style={child}>
-//                                     <OrderCard src={img1} name='red velvet' price={'1000 /.'} />
-//                                 </div>
-//                                 </div>
-//                             </div>
-//                         </div> */}

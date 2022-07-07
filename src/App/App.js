@@ -1,6 +1,6 @@
 import './App.css';
 import HomePage from '../components/Home/HomePage';
-
+import "swiper/css/bundle";
 
 function App() {
   return (
