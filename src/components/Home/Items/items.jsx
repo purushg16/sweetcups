@@ -14,51 +14,51 @@ function Items() {
             <h3 id='items-h3'> SweetCups Bangalore serves the following freshly made and custom made-to-order </h3>
             </div>
 
-            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s first-section uk-text-center" uk-grid='true'>
+            <div className="uk-grid-column-small uk-grid-row-large uk-child-width-1-3@s first-section uk-text-center" uk-grid='true'>
                 <div>
                     <div>
-                        <div class="uk-card uk-card-item uk-card-body">
+                        <div className="uk-card uk-card-item uk-card-body">
                             <img className='item-img' src={cake} alt=''/>
-                            <h3 class="uk-card-title item-title"> Cakes </h3>
+                            <h3 className="uk-card-title item-title"> Cakes </h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <div class="uk-card uk-card-item uk-card-body">
+                        <div className="uk-card uk-card-item uk-card-body">
                         <img className='item-img' src={ccake} alt=''/>
 
-                            <h3 class="uk-card-title item-title"> Cup Cakes </h3>
+                            <h3 className="uk-card-title item-title"> Cup Cakes </h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <div class="uk-card uk-card-item uk-card-body">
+                        <div className="uk-card uk-card-item uk-card-body">
                         <img className='item-img' src={choco} alt=''/>
 
-                            <h3 class="uk-card-title item-title"> Chocolates </h3>
+                            <h3 className="uk-card-title item-title"> Chocolates </h3>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center second-row" uk-grid='true'>
+            <div className="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-text-center second-row" uk-grid='true'>
                 <div>
                     <div>
-                        <div class="uk-card uk-card-item uk-card-body">
+                        <div className="uk-card uk-card-item uk-card-body">
                         <img className='item-img t-row' src={cookie} alt=''/>
 
-                            <h3 class="uk-card-title item-title"> Cookies </h3>
+                            <h3 className="uk-card-title item-title"> Cookies </h3>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div>
-                        <div class="uk-card uk-card-item uk-card-body">
+                        <div className="uk-card uk-card-item uk-card-body">
                         <img className='item-img t-row' src={gh} alt=''/>
 
-                            <h3 class="uk-card-title item-title"> Gift Hampers </h3>
+                            <h3 className="uk-card-title item-title"> Gift Hampers </h3>
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import Single from '../components/Home/SingleCake/Single';
 
 
 function App() {
+  
   return (
     <div className="App">
 

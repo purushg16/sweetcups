@@ -32,7 +32,6 @@ const currencies = [
 
 function Single(props) {
 
-
     let params = useParams();
     console.log(params.cakename)
     const location = useLocation()
@@ -83,7 +82,7 @@ function Single(props) {
                     </div>
 
                     <div className="col-lg-6 col-md-6 col-sm-12 single-right">
-                        <h3 id='cake-name' > {data.name} </h3>
+                        <h3 id='cake-name' > {data.cakeName} </h3>
                         <hr></hr>
                         <p> {data.size1} </p>
 
@@ -127,12 +126,11 @@ function Single(props) {
 
                                     <p> Wishes goes here </p>
                                     <FormControl fullWidth sx={{ m: 1 }}>
-                                        <InputLabel htmlFor="outlined-adornment-amount"> Wishes </InputLabel>
+                                        <InputLabel htmlFor="outlined"> Wishes </InputLabel>
                                         <OutlinedInput
-                                            id="outlined-adornment-amount"
+                                            id="outlined-adornment"
                                             value={values.amount}
                                             onChange={handleChange1('amount')}
-                                            startAdornment={<InputAdornment position="start">$</InputAdornment>}
                                             label="Amount"
                                         />
                                     </FormControl>
@@ -144,6 +142,7 @@ function Single(props) {
                                     <p id='p-quatity'> Quantity </p>
 
                                     <TextField
+                                        required={true}
                                         id="outlined-number"
                                         label="Quantity"
                                         type="number"
@@ -157,14 +156,16 @@ function Single(props) {
                                             marginRight: '2%'
                                         }}
                                     />
+
                                 </div>
+
                             </div>
                         </div>
 
                         <Button style={{
                             display: 'block',
                             marginTop: '2%',
-                        }} color='success' variant="contained"> Add to Cart</Button>
+                        }} color='success' variant="contained"> Add to Cart </Button>
 
 
                     </div>

@@ -39,10 +39,10 @@ export default class Navbar extends React.Component {
 
                 <div id="uk-top">
 
-                    <nav class="uk-navbar-container" uk-navbar='true'>
-                        <div class="uk-navbar-center">
+                    <nav className="uk-navbar-container" uk-navbar='true'>
+                        <div className="uk-navbar-center">
                         <a id="brand" href="/"> <img alt="" src={logo} /> </a>
-                            <ul class="uk-navbar-nav">
+                            <ul className="uk-navbar-nav">
                                 <li><a href="#feature-section"> About </a></li>
                                 <li><a href="#gallery-section"> Gallery </a></li>
                                 <li><a href="#contact-section"> Contact </a></li>
