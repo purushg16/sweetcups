@@ -4,3 +4,13 @@ section#order-section {
     border-radius: 99px 10px 99px;
     /* background: #ffa2d0; */
 }
+
+a{
+    text-decoration: none !important;
+}
+
+@media (max-width: 1000px) {
+    .swiper-button-prev, .swiper-button-next{
+        display: none !important;
+    }
+}

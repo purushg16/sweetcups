@@ -30,8 +30,6 @@ export default class Navbar extends React.Component {
         document.body.appendChild(Ulkitscript2);
         document.body.appendChild(scriptTag);
 
-
-
     }
 
     render() {

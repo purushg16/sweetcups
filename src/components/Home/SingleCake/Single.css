@@ -1,0 +1,46 @@
+
+h3#cake-name{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.single-right{
+    text-align: left;
+}
+
+.size-div{
+    padding-left: 0 !important;
+    margin: 5% 0 !important;
+}
+
+span#price{
+    color: #fb64fe;
+}
+
+div.price-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.css-1w4vsez-MuiFormControl-root {
+    margin-left: 0 !important;
+}
+
+@media (max-width: 576px) {
+
+    div.wishnq{
+        width: 50% !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .single-right{
+        margin-top: 5% !important;
+        text-align: center;
+    }
+
+}

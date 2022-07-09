@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,51 +13,27 @@ import "./Order.css";
 
 import OrderCard from "./OrderCard";
 import img1 from "./img-1.jpg";
-import img2 from "./img-2.jpg";
-import img3 from "./img-3.jpg";
+// import img2 from "./img-2.jpg";
+// import img3 from "./img-3.jpg";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
 export default function Order() {
-    const [swiperRef, setSwiperRef] = useState(null);
 
-    //   let appendNumber = 4;
-    //   let prependNumber = 1;
+    const data = {
+      name: 'red velvet',
+      price1: '1,200',
+      price2: '1,340'
+    } 
 
-    //   const prepend2 = () => {
-    //     swiperRef.prependSlide([
-    //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-    //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-    //     ]);
-    //   };
-
-    //   const prepend = () => {
-    //     swiperRef.prependSlide(
-    //       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-    //     );
-    //   };
-
-    //   const append = () => {
-    //     swiperRef.appendSlide(
-    //       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-    //     );
-    //   };
-
-    //   const append2 = () => {
-    //     swiperRef.appendSlide([
-    //       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-    //       '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-    //     ]);
-    //   };
-
+    const name = 'red velvet'
     return (
         <section id="order-section">
             <Swiper
                 slidesPerView={1}
                 spaceBetween={1}
-                // navigation={{
-                //     enabled : true
-                // }}
+                navigation={true}
+
                 breakpoints={{
                     640: {
                         slidesPerView: 2,
@@ -64,23 +41,21 @@ export default function Order() {
                     },
                     768: {
                         slidesPerView: 2,
-                        spaceBetween: 40,
+                        spaceBetween: 10,
                     },
-                    1024: {
+                    1023: {
                         slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
+                        spaceBetween: 10,
+                    }
                 }}
-                modules={[Pagination]}
+                modules={[Pagination, Navigation]}
                 className="mySwiper"
             >
 
-                <SwiperSlide> <OrderCard src={img1} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
-                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
-                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
-                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
-                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
-                <SwiperSlide> <OrderCard src={img2} name='red velvet' price={'1000 /.'} /> </SwiperSlide>
+                <SwiperSlide> <Link to={`/cakes/${name}`} state= {data} > <OrderCard src={img1} name='red velvet' price={'1000 /.'} /> </Link> </SwiperSlide>
+                <SwiperSlide> <Link to={`/cakes/${name}`} state= {data} > <OrderCard src={img1} name='red velvet' price={'1000 /.'} /> </Link> </SwiperSlide>
+                <SwiperSlide> <Link to={`/cakes/${name}`} state= {data} > <OrderCard src={img1} name='red velvet' price={'1000 /.'} /> </Link> </SwiperSlide>
+                <SwiperSlide> <Link to={`/cakes/${name}`} state= {data} > <OrderCard src={img1} name='red velvet' price={'1000 /.'} /> </Link> </SwiperSlide>
             </Swiper>
 
             {/* <p className="append-buttons">
