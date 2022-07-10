@@ -78,11 +78,26 @@ function Single(props) {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12">
-                        <img src={img1} alt="" />
+                        <img src={`https://sweetcups-server.herokuapp.com/${data.cakeImgUrl}`} alt="" />
                     </div>
 
                     <div className="col-lg-6 col-md-6 col-sm-12 single-right">
-                        <h3 id='cake-name' > {data.cakeName} </h3>
+
+                        <div className="container">
+                            <div className="row">
+
+                                <div className="col-lg-6 col-md-6 col-sm-6 top-div">
+
+
+                                    <h3 id='cake-name' > {data.cakeName} </h3>
+                                </div>
+
+                                <div className="col-lg-6 col-md-6 col-sm-6 price-div">
+                                    <p id='cake-size' style={{ marginBottom: '0px' }}> <span id='price'> {price * quantity} </span> /- </p>
+                                </div>
+                            </div>
+                        </div>
+
                         <hr></hr>
                         <p> {data.size1} </p>
 
@@ -113,16 +128,15 @@ function Single(props) {
                                     </ToggleButtonGroup>
                                 </div>
 
-                                <div className="col-lg-6 col-md-12 col-sm-12 price-div">
-                                    <p id='cake-size' style={{ marginBottom: '0px' }}> Total Price: <span id='price'> {price * quantity} </span> /- </p>
-                                </div>
+
+
                             </div>
                         </div>
 
                         <div className="container">
                             <div className="row">
 
-                                <div className="col-lg-6 col-md-6 col-sm-6 wishnq">
+                                <div className="col-lg-6 col-md-6 col-sm-6 wishnq" style={{ paddingLeft: '0px' }}>
 
                                     <p> Wishes goes here </p>
                                     <FormControl fullWidth sx={{ m: 1 }}>
@@ -137,7 +151,7 @@ function Single(props) {
                                 </div>
 
 
-                                <div className="col-lg-6 col-md-6 col-sm-6 wishnq" style={{ paddingRight : '0px' }}>
+                                <div className="col-lg-6 col-md-6 col-sm-6 wishnq" style={{ paddingRight: '0px' }}>
 
                                     <p id='p-quatity'> Quantity </p>
 
@@ -162,10 +176,7 @@ function Single(props) {
                             </div>
                         </div>
 
-                        <Button style={{
-                            display: 'block',
-                            marginTop: '2%',
-                        }} color='success' variant="contained"> Add to Cart </Button>
+                        <Button color='success' variant="contained"> Add to Cart </Button>
 
 
                     </div>

@@ -3,6 +3,9 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 import Skeleton from '@mui/material/Skeleton';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,8 +15,8 @@ import "swiper/css/navigation";
 import "./styles.css";
 import "./Order.css";
 
-import OrderCard from "./OrderCard";
-import img1 from "./img-1.jpg";
+// import OrderCard from "./OrderCard";
+// import img1 from "./img-1.jpg";
 // import img2 from "./img-2.jpg";
 // import img3 from "./img-3.jpg";
 // import required modules
@@ -23,12 +26,14 @@ export default function Order() {
 
   const [cakes, fetchCakes] = React.useState([])
   const [loaded, isloaded] = React.useState(false)
+  const [imageLoaded, setImageLoaded] = React.useState(false);
+
 
   const getData = async () => {
     fetch('https://sweetcups-server.herokuapp.com/cakeDetails')
       .then((res) => res.json())
       .then((res) => {
-        console.log(res)
+        // console.log(res)
         fetchCakes(res)
       })
   }
@@ -49,6 +54,8 @@ export default function Order() {
   // const name = 'red velvet'
   return (
     <section id="order-section">
+    <h3 id='order-h3'> Delicious Products </h3>
+    <hr></hr>
       <Swiper
         slidesPerView={1}
         spaceBetween={1}
@@ -76,36 +83,81 @@ export default function Order() {
           loaded ?
             (cakes.map((cake) => (
               <SwiperSlide>
+
                 <Link to={`/cakes/${cake.cakeName}`} state={cake} >
-                  <OrderCard src={img1} name={cake.cakeName} price={'1000 /.'} />
+
+                  <Box>
+                      <img
+                        style={{
+                          width: '70%',
+                          display: 'block',
+                          marginLeft: 'auto',
+                          marginRight: 'auto'
+                        }}
+                        src={`https://sweetcups-server.herokuapp.com/${cake.cakeImgUrl}`}
+                        alt='pics goes her'
+                        className={`smooth-image image-${imageLoaded ? 'visible' : 'hidden'
+                          }`}
+                        onLoad={() => setImageLoaded(true)}
+                      />
+
+                    {!imageLoaded && (
+                      <div className="smooth-preloader" style={{
+                        width: '50%',
+                        display: 'block',
+                        marginLeft: 'auto',
+                        marginRight: 'auto'
+                      }}>
+                        <img src='https://cdn.dribbble.com/users/107759/screenshots/3756455/cake.gif' alt='' />
+                        <span className="loader" />
+                      </div>
+                    )}
+
+                    {cake ? (
+                      <Box sx={{ pr: 10 }}>
+                        <Typography gutterBottom variant="body2" style={{ marginTop: '3%', fontSize: '1.5rem', color:'#ff610c' }}>
+                          {cake.cakeName}
+                        </Typography>
+                        <Typography variant="caption" color="text.secondary">
+                          {`~ from 2000`}
+                        </Typography>
+                      </Box>
+                    ) : (
+                      <Box sx={{ pt: 0.5 }}>
+                        <Skeleton />
+                        <Skeleton width="60%" />
+                      </Box>
+                    )}
+                  </Box>
+
                 </Link>
               </SwiperSlide>))) :
+
             (
-
-
               <div className="container">
                 <div className="row">
                   <div className="col-lg-4 col-md-4 col-sm-12">
                     <Skeleton
-                      sx={{ bgcolor: 'grey.900' }}
+                      sx={{ bgcolor: 'white.900' }}
                       variant="rectangular"
                     />
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12">
                     <Skeleton
-                      sx={{ bgcolor: 'grey.900' }}
+                      sx={{ bgcolor: 'white.900' }}
                       variant="rectangular"
                     />
                   </div>
                   <div className="col-lg-4 col-md-4 col-sm-12">
                     <Skeleton
-                      sx={{ bgcolor: 'grey.900' }}
+                      sx={{ bgcolor: 'white.900' }}
                       variant="rectangular"
                     />
                   </div>
                 </div>
               </div>
             )
+
         }
 
 
@@ -127,6 +179,6 @@ export default function Order() {
           Append 2 Slides
         </button>
       </p> */}
-    </section>
+    </section >
   );
 }

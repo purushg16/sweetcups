@@ -1,4 +1,12 @@
 
+section#single-cake{
+    padding: 5%;
+}
+
+#single-cake hr{
+    margin-top: 0.3rem;
+}
+
 h3#cake-name{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
@@ -7,6 +15,10 @@ h3#cake-name{
 
 .single-right{
     text-align: left;
+}
+
+p#cake-size{
+    font-size: 2rem;
 }
 
 .size-div{
@@ -21,7 +33,7 @@ span#price{
 div.price-div{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
 }
 
 .css-1w4vsez-MuiFormControl-root {
@@ -36,6 +48,19 @@ div.price-div{
 
 }
 
+@media (max-width: 768px) {
+
+button.MuiButton-containedSuccess{
+    margin: 2%;
+    width: 100%;
+}
+}
+
+@media (min-width: 768px) {
+    button.MuiButton-containedSuccess{
+        display: block;
+    }
+}
 @media (max-width: 768px) {
     
     .single-right{
