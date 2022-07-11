@@ -8,7 +8,7 @@ section#single-cake {
 
 h3#cake-name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
 }
 
@@ -16,6 +16,11 @@ h3#cake-name {
     text-align: left;
     display: flex;
     align-items: center;
+}
+
+
+div.top-div{
+    padding-left: 0%;
 }
 
 p#cake-size {

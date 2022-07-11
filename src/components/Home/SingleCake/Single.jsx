@@ -11,31 +11,31 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+// import Radio from '@mui/material/Radio';
+// import RadioGroup from '@mui/material/RadioGroup';
+// import FormControlLabel from '@mui/material/FormControlLabel';
+// import FormLabel from '@mui/material/FormLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 
 
-const sizes = [
-    {
-        size: 'Large',
-        price: '1300',
-    },
-    {
-        size: 'Medium',
-        price: '1000',
-    },
-];
+// const sizes = [
+//     {
+//         size: 'Large',
+//         price: '1300',
+//     },
+//     {
+//         size: 'Medium',
+//         price: '1000',
+//     },
+// ];
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -56,9 +56,10 @@ function Single(props) {
     const location = useLocation()
     const data = location.state
 
-    const [size, setsize] = React.useState('Medium');
-    const [price, setprice] = React.useState(data.price1);
-    const [quantity, setq] = React.useState(1);
+    const [size, setsize] = React.useState('');
+    let [price, setprice] = React.useState(0);
+    let [quantity, setq] = React.useState(1);
+    const [canBuy, setCanBuy] = React.useState(true);
 
     // const handleAlignment = (event, newAlignment) => {
     //     setAlignment(newAlignment);
@@ -70,21 +71,37 @@ function Single(props) {
         setExpanded(!expanded);
     };
 
-    const handleChange = (event, newValue) => {
-        console.log(newValue);
-        if (newValue !== null) {
-            setsize(newValue);
-        }
-        setprice(newValue);
-    };
+    // const handleChange = (event, newValue) => {
+    //     console.log(newValue);
+    //     if (newValue !== null) {
+    //         setsize(newValue);
+    //     }
+    //     setprice(newValue);
+    // };
 
+    const handleChange2 = (event) => {
+        console.log(event.target.value);
+        if (event.target.value !== null) {
+            setsize(event.target.value);
+        }
+        setprice(event.target.value);
+    };
     // console.log("f: " + fixedPrice);
 
     const printD = (event) => {
         console.log(event.target.value);
-        setq(event.target.value);
-        // fixedPrice = price * q;
+        if (event.target.value >= 0) {
+            setq(event.target.value);
+        }
     }
+
+    React.useEffect(() => {
+        if (price * quantity > 0) {
+            setCanBuy(false);
+        } else {
+            setCanBuy(true);
+        }
+    }, [canBuy, price, quantity])
 
     const [values, setValues] = React.useState({
         amount: '',
@@ -185,46 +202,56 @@ function Single(props) {
                             </div>
 
                             <hr></hr>
-                            <p> {data.size1} </p>
 
-                            <div className="container">
-                                <div className="row">
+                            <div className="container" style={{ padding: 0, marginBottom: '5%' }}>
+                                {/* <ToggleButtonGroup
+                                    color="success"
+                                    value={size}
+                                    exclusive
+                                    onChange={handleChange}
+                                    aria-label="text alignment"
+                                    size='small'
+                                >
 
-                                    <div className="col-lg-6 col-md-12 col-sm-12 size-div">
-                                        <ToggleButtonGroup
-                                            color="success"
-                                            value={size}
-                                            exclusive
-                                            onChange={handleChange}
-                                            aria-label="text alignment"
-                                        >
+                                    {data.cakeSize.map((option) => (
+                                        <ToggleButton className='size-toggle' value={option.price} aria-label={option.size}>
+                                            <div className="container">
+                                                <div className="row">
+                                                    <div className="col-12 col-sm-12"> {option.size} </div>
+                                                    <div className="col-12 col-sm-12"> {option.price} </div>
+                                                </div>
+                                            </div>
 
-                                            {data.cakeSize.map((option) => (
-                                                <ToggleButton className='size-toggle' value={option.size} aria-label={option.price}>
-                                                    <div className="container">
-                                                        <div className="row">
-                                                            <div className="col-12 col-sm-12"> {option.size} </div>
-                                                            <div className="col-12 col-sm-12"> {option.price} </div>
-                                                        </div>
-                                                    </div>
+                                        </ToggleButton>
+                                    ))}
 
-                                                </ToggleButton>
-                                            ))}
+                                </ToggleButtonGroup> */}
 
-                                        </ToggleButtonGroup>
-                                    </div>
+                                <FormControl fullWidth>
+                                    <InputLabel id="demo-simple-select-label"> Size </InputLabel>
+                                    <Select
+                                        labelId="demo-simple-select-label"
+                                        id="demo-simple-select"
+                                        value={size}
+                                        label="Age"
+                                        onChange={handleChange2}
+                                        style={{ textTransform: 'Capitalize' }}
+                                    >
+                                        {data.cakeSize.map((option) => (
+                                            <MenuItem value={option.price}> {option.size} {option.price} </MenuItem>
+                                        ))}
 
+                                    </Select>
+                                </FormControl>
 
-
-                                </div>
                             </div>
+
 
                             <div className="container">
                                 <div className="row">
 
                                     <div className="col-lg-6 col-md-12 col-sm-12 wishnq wqleft" style={{ paddingLeft: '0px' }}>
 
-                                        <p> Wishes goes here </p>
                                         <FormControl fullWidth sx={{ m: 1 }}>
                                             <InputLabel htmlFor="outlined"> Wishes </InputLabel>
                                             <OutlinedInput
@@ -238,9 +265,6 @@ function Single(props) {
 
 
                                     <div className="col-lg-6 col-md-12 col-sm-12 wishnq wqright" style={{ paddingRight: '0px' }}>
-
-                                        <p id='p-quatity'> Quantity </p>
-
                                         <TextField
                                             className='quantity-div'
                                             required={true}
@@ -263,8 +287,7 @@ function Single(props) {
                                 </div>
                             </div>
 
-                            <Button color='success' variant="contained"> Add to Cart </Button>
-
+                            <a href='/purchase' > <Button color='success' variant="contained" disabled={canBuy}> Buy Now </Button> </a>
 
                         </div>
                     </div>
